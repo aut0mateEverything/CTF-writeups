@@ -1,3 +1,5 @@
+### Foothold
+
 ## Step 1: Scan for Open Ports
 
 First thing, let's scan for open ports with the following `nmap` command:
