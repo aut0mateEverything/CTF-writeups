@@ -1,4 +1,4 @@
-### Foothold
+# Foothold
 
 ## Step 1: Scan for Open Ports
 
