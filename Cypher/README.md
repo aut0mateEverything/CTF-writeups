@@ -30,7 +30,6 @@ After trying some Cypher injection payloads we can see that there is a huge erro
 ```
 ### How this works?
 This payload returns the hash of the string "test", which is then used for comparison against the user-provided password hash instead of actual admins hash.
-(no burpsuite needed)
 
 ![Demo page](img/Demopage.png)
 
