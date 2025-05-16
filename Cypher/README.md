@@ -73,6 +73,8 @@ After listing graphasms home files we find bbot configuration file which contain
 
 Right after logging in, I tried running sudo -l, and this was the response.
 
+![sudol](img/sudol.png)
+
 After some time, I discovered that I can parse custom YARA rules, and with the help of the debugger flag, I can retrieve the contents of any file specified by that flag.
 
 ```bash
