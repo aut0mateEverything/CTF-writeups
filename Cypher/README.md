@@ -12,3 +12,8 @@ nmap -sV -sC -p- --defeat-rst-ratelimit -O -A cypher.htb
 
 With only ports 80 and 22 open, we’ll start by examining the web service.
 
+![Login page](img/loginpage.png)
+
+After trying some SQL payloads we can see that there is a huge error popping up. This strongly suggests a potential SQL injection vulnerability.
+
+![Login page after injecting 'OR 1=1](img/image.png)
