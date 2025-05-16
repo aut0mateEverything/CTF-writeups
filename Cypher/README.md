@@ -82,7 +82,7 @@ sudo bbot -t target.com --custom-yara-rules=/root/root.txt --debug
 ```
 ![img](img/root.png)
 
-And thats how we get the root flag! :)
-Cypher pwned.
+And thats how we get the root flag.
+
 
 
