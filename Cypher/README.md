@@ -31,7 +31,7 @@ After trying some Cypher injection payloads we can see that there is a huge erro
 
 This payload returns the hash of the string "test", which is then used for comparison against the user-provided password hash instead of actual admins hash.
 
-#Tip
+# Tip
 
 You can use Burp Suite's proxy to intercept and modify the request, but simply pasting the values directly into the login form fields also works effectively.
 
