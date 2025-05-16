@@ -78,7 +78,7 @@ After some time, I discovered that I can parse custom YARA rules, and with the h
 ```bash
 sudo bbot -t target.com --custom-yara-rules=/root/root.txt --debug
 ```
-![img]
+![img](img/root.png)
 
 And thats how we get the root flag! :)
 Cypher pwned.
