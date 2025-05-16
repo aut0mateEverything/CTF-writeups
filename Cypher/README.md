@@ -6,7 +6,7 @@ First thing, let's scan for open ports with the following `nmap` command:
 nmap -sV -sC -p- --defeat-rst-ratelimit -O -A cypher.htb
 ```
 ## Scan results:
-![Nmap port scan](img/image.png)
+![Nmap port scan](img/nmap.png)
 
 ## Step 2: Investigate website
 
