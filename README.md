@@ -25,10 +25,5 @@ All content is for educational purposes only. Do not use this information to tar
 
 Pull requests are welcome for improvements, corrections, or new writeups. Please follow a similar structure and include relevant metadata (challenge name, points, category, and CTF event).
 
-## 📬 Contact
-
-- GitHub Issues: For suggestions or questions
-- Email: your-email@example.com *(optional)*
-
 Happy hacking! 🧑‍💻💣
 
