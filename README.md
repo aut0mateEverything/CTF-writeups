@@ -1,4 +1,4 @@
-# CTF Writeups by BloodTrace636
+# CTF Writeups
 
 Welcome to my curated collection of Capture The Flag (CTF) writeups.  
 This repository documents technical walkthroughs of challenges from platforms like Hack The Box, TryHackMe, and more.  
