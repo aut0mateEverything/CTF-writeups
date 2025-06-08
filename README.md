@@ -1,19 +1,13 @@
-# CTF Writeups
+# 🛡️ CTF Writeups
 
-Welcome to my curated collection of Capture The Flag (CTF) writeups.  
-This repository documents technical walkthroughs of challenges from platforms like Hack The Box, TryHackMe, and more.  
-The goal is to reinforce learning, share methodologies, and demonstrate practical cybersecurity skills.
+This repository contains my personal Capture The Flag (CTF) writeups, custom-developed exploits, and technical notes on offensive security practices.  
+---
+
+## ⚠️ Disclaimer
+
+All content in this repository is provided for **educational purposes only**.  
+Unauthorized access to systems without permission is illegal and unethical.
 
 ---
 
-## 📁 Repository Structure
-
-```bash
-CTF-writeups/
-├── HackTheBox/
-│   └── Cypher/
-│       └── README.md
-├── TryHackMe/
-│   └── ...
-└── Misc/
-    └── Notes, Tools, Scripts
+> _"We're stuck in this loop. Try, fail, try again, fail again. But we're always trying. Why? Because maybe the fight is all we have."_
