@@ -1,4 +1,4 @@
-# Foothold
+# Cypher - Medium
 
 ## Step 1: Scan for Open Ports
 
