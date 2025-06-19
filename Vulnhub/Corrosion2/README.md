@@ -41,6 +41,7 @@ This penetration test focused on identifying vulnerabilities on a target system 
 
 - The user flag was found in `randy`'s home directory: ca73a018ae6908a7d0ea5d1c269ba4b6
 ---
+![Tomcat Manager](img/user.png)
 
 ## 🔓 Privilege Escalation
 
