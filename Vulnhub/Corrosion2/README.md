@@ -5,16 +5,17 @@
 This penetration test focused on identifying vulnerabilities on the target system running web services. By leveraging exposed credentials and abusing a misconfigured SUID binary, both user and root privileges were successfully obtained.
 
 ---
-![banner](img/tomcat_webpage.png)
+
 ## Reconnaissance
 
 - **Target IP:** `192.168.56.101`
 - **Open ports:**
+  - `22` — SSH
   - `80` — Apache HTTP Server 2.4.41
   - `8080` — Apache Tomcat 9.0.53
 
 ---
-
+![banner](img/Tomcat_webpage.png)
 ## Enumeration & Initial Access
 
 - A backup archive (`/backup.zip`) was discovered through directory busting.
