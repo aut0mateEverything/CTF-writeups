@@ -5,7 +5,7 @@
 This penetration test focused on identifying vulnerabilities on the target system running web services. By leveraging exposed credentials and abusing a misconfigured SUID binary, both user and root privileges were successfully obtained.
 
 ---
-
+![banner](img/tomcat_webpage.png)
 ## Reconnaissance
 
 - **Target IP:** `192.168.56.101`
