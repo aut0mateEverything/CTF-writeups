@@ -1,65 +1,78 @@
-# Penetration Test Writeup — Corrosion 2
+# 🛡️ Penetration Test Writeup — Corrosion 2
 
-## Summary
+## 📝 Summary
 
-This penetration test focused on identifying vulnerabilities on the target system running web services. By leveraging exposed credentials and abusing a misconfigured SUID binary, both user and root privileges were successfully obtained.
+This penetration test focused on identifying vulnerabilities on a target system running web services. By leveraging exposed credentials, cracking a protected archive, and exploiting a misconfigured SUID binary, both user and root privileges were successfully obtained.
 
 ---
 
-## Reconnaissance
+## 🔍 Reconnaissance
 
 - **Target IP:** `192.168.56.101`
-- **Open ports:**
-  - `22` — SSH
-  - `80` — Apache HTTP Server 2.4.41
+- **Open Ports:**
+  - `22` — SSH  
+  - `80` — Apache HTTP Server 2.4.41  
   - `8080` — Apache Tomcat 9.0.53
 
 ---
-![banner](img/Tomcat_webpage.png)
-## Enumeration & Initial Access
 
-- A backup archive (`/backup.zip`) was discovered through directory busting.
-- Sensitive credentials were found inside the Tomcat configuration file `tomcat-users.xml`:
-  - `admin:melehifokivai`
-  - `manager:melehifokivai`
-- These credentials enabled authentication to the Tomcat server, allowing for a reverse shell as the `tomcat` user.
+## 📂 Enumeration & Initial Access
 
----
+![Tomcat Manager](img/Tomcat_webpage.png)
 
-## User Enumeration & Flag Capture
-
-- The following users were discovered on the system:
-  - `jaye`
-  - `randy`
-  - `tomcat`
-- Accessing `jaye`’s home directory revealed the user flag:
-
-user.txt = ca73a018ae6908a7d0ea5d1c269ba4b6
+- A backup archive (`/backup.zip`) was discovered via directory busting.
+- The archive was password-protected.
+- **Password Cracking:**  
+  Using **John the Ripper**, the password was cracked: @administrator_hi5
+  - The extracted contents included the `tomcat-users.xml` file containing credentials:
+- `admin:melehifokivai`
+- `manager:melehifokivai`
+- These credentials allowed access to the Tomcat Web Application Manager.
+- A reverse shell was deployed using the `tomcat` account.
 
 ---
 
-## Privilege Escalation
+## 👤 User Enumeration & Flag Capture
 
-- With credentials discovered earlier, login to the `jaye` account was achieved.
-- Inside `jaye`’s `FILES` directory, an executable named `look` was found with the **SUID** bit set.
-- Exploiting this SUID binary allowed escalation to root privileges.
-- The root flag was retrieved:
+- Discovered users:
+- `jaye`
+- `randy`
+- `tomcat`
 
-root.txt = 2fdbf8d4f894292361d6c72c8e833a4b
+- The user flag was found in `jaye`'s home directory: ca73a018ae6908a7d0ea5d1c269ba4b6
+- 
+---
+
+## 🔓 Privilege Escalation
+
+- SSH access to `jaye` was obtained using credentials from earlier steps.
+- In `~/FILES`, a suspicious **SUID binary** named `look` was discovered.
+- By analyzing and exploiting this binary, root-level access was achieved.
+
+- The root flag was found: 2fdbf8d4f894292361d6c72c8e833a4b
+- 
+---
+
+## 🔑 Key Takeaways
+
+- **Credential Exposure:** Sensitive information in configuration files can lead to complete system compromise.
+- **Weak Archive Protection:** Weak ZIP passwords are easily cracked using tools like John the Ripper.
+- **Service Account Misconfiguration:** The `tomcat` user had access to sensitive files.
+- **SUID Binary Exploitation:** Misconfigured SUID executables remain a dangerous privilege escalation vector.
 
 ---
 
-## Key Takeaways
+## 🛡️ Defense Recommendations
 
-- **Credential exposure:** Sensitive information in configuration files can lead to initial footholds.
-- **Service account permissions:** Tomcat user had access to sensitive files and system users.
-- **SUID binary abuse:** Misconfigured SUID executables remain a critical attack vector for privilege escalation.
-- **Defense recommendations:**
-- Regularly audit SUID binaries.
-- Restrict and rotate credentials for web services.
-- Apply least privilege principle for service accounts.
+- Regularly audit and restrict SUID binaries.
+- Enforce strong password policies for archived files.
+- Avoid storing plaintext credentials in configuration files.
+- Apply the principle of least privilege to service accounts.
 
 ---
 
-*Written by aut0mateEverything — https://github.com/aut0mateEverything*  
+*✍️ Written by [aut0mateEverything](https://github.com/aut0mateEverything)*
+
+
+
 
