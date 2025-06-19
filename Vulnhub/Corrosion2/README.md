@@ -40,7 +40,6 @@ This penetration test focused on identifying vulnerabilities on a target system 
 - `tomcat`
 
 - The user flag was found in `jaye`'s home directory: ca73a018ae6908a7d0ea5d1c269ba4b6
-- 
 ---
 
 ## 🔓 Privilege Escalation
@@ -50,7 +49,6 @@ This penetration test focused on identifying vulnerabilities on a target system 
 - By analyzing and exploiting this binary, root-level access was achieved.
 
 - The root flag was found: 2fdbf8d4f894292361d6c72c8e833a4b
-- 
 ---
 
 ## 🔑 Key Takeaways
