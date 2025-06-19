@@ -5,7 +5,7 @@
 This penetration test focused on identifying vulnerabilities on a target system running web services. By leveraging exposed credentials, cracking a protected archive, and exploiting a misconfigured SUID binary, both user and root privileges were successfully obtained.
 
 ---
-
+![Tomcat Manager](img/Tomcat_webpage.png)
 ## 🔍 Reconnaissance
 
 - **Target IP:** `192.168.56.101`
@@ -18,7 +18,7 @@ This penetration test focused on identifying vulnerabilities on a target system 
 
 ## 📂 Enumeration & Initial Access
 
-![Tomcat Manager](img/Tomcat_webpage.png)
+![Tomcat Manager](img/my_script_shell.png)
 
 - A backup archive (`/backup.zip`) was discovered via directory busting.
 - The archive was password-protected.
@@ -31,7 +31,7 @@ This penetration test focused on identifying vulnerabilities on a target system 
 - A reverse shell was deployed using the `tomcat` account.
 
 ---
-![Tomcat Manager](img/my_script_shell.png)
+![reverseshell](img/user.png)
 ## 👤 User Enumeration & Flag Capture
 
 - Discovered users:
@@ -41,7 +41,7 @@ This penetration test focused on identifying vulnerabilities on a target system 
 
 - The user flag was found in `randy`'s home directory: ca73a018ae6908a7d0ea5d1c269ba4b6
 ---
-![Tomcat Manager](img/user.png)
+![ssh](img/ssh.png)
 
 ## 🔓 Privilege Escalation
 
@@ -51,7 +51,7 @@ This penetration test focused on identifying vulnerabilities on a target system 
 
 - The root flag was found: 2fdbf8d4f894292361d6c72c8e833a4b
 ---
-
+![privesc](img/privesc.png)
 ## 🔑 Key Takeaways
 
 - **Credential Exposure:** Sensitive information in configuration files can lead to complete system compromise.
