@@ -28,7 +28,7 @@ This penetration test focused on identifying vulnerabilities on a target system 
 - `admin:melehifokivai`
 - `manager:melehifokivai`
 - These credentials allowed access to the Tomcat Web Application Manager.
-- A reverse shell was deployed using the `tomcat` account.
+- A reverse shell was deployed using my own python tool (https://github.com/aut0mateEverything/Tomcat-webshell) and `admin` account.
 
 ---
 ![reverseshell](img/user.png)
