@@ -31,7 +31,7 @@ This penetration test focused on identifying vulnerabilities on a target system 
 - A reverse shell was deployed using the `tomcat` account.
 
 ---
-
+![Tomcat Manager](img/my_script_shell.png)
 ## 👤 User Enumeration & Flag Capture
 
 - Discovered users:
