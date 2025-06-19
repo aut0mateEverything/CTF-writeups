@@ -69,7 +69,8 @@ This penetration test focused on identifying vulnerabilities on a target system 
 - Apply the principle of least privilege to service accounts.
 
 ---
-
+## Personal notes
+- That machine was classified as medium, but in my opinion it should be easy. It was very straight forward and beginner friendly. Overall very fun and helpful if sameone want to experiment with python and personal tooling. 
 *✍️ Written by [aut0mateEverything](https://github.com/aut0mateEverything)*
 
 
