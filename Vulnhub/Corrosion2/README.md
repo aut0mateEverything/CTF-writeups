@@ -70,7 +70,7 @@ This penetration test focused on identifying vulnerabilities on a target system 
 
 ---
 ## Personal notes
-- That machine was classified as medium, but in my opinion it should be easy. It was very straight forward and beginner friendly. Overall very fun and helpful if sameone want to experiment with python and personal tooling. 
+- The machine was classified as medium difficulty, but I personally found it to be quite easy. It was very straightforward and beginner-friendly. Overall, it was a fun and valuable experience—especially for anyone looking to experiment with Python and build personal tooling. 
 *✍️ Written by [aut0mateEverything](https://github.com/aut0mateEverything)*
 
 
