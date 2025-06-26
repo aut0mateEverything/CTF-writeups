@@ -1,4 +1,4 @@
-# 🛡️ CTF Writeups
+# 🚩 CTF Writeups
 
 This repository contains my personal Capture The Flag (CTF) writeups, custom-developed exploits, and technical notes on offensive security practices.  
 ---
